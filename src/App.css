@@ -55,6 +55,9 @@ body{
 .data-table .active{
   background: #fff;
 }
+.data-table{
+  margin-bottom: 0;
+}
 .data-table tr{
   cursor: pointer;
 }
