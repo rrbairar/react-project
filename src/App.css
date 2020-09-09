@@ -33,13 +33,16 @@ body{
   color: #82a516;
   border: none;
   border-bottom: 5px solid #82a516;
-  font-weight: 300;
+  font-weight: 500;
 }
 .common_container .nav-link{
   padding: 15px 35px;
 }
 .tabs{
   border-bottom: 3px solid #ccc;
+}
+.tab-pane{
+  background: #fff;
 }
 .tabs .tab a{
   font-size: 16px;
