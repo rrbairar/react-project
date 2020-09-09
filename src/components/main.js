@@ -21,7 +21,7 @@ class Data extends Component{
   render(){
     return(
       <div className="data_container common_container">
-      	<Table className="data-table">
+      	<Table className="data-table" responsive>
 		  <thead>
 		    <tr>
 		      <th>Date</th>
@@ -43,7 +43,7 @@ class Data extends Component{
 					let current_date = `${year}-${month}-${date}`
 					console.log(current_date)
 					let msdiff= new Date(current_date) - new Date(camp_date_local)
-					let daydiff = msdiff / (1000 * 60 * 60 * 24);
+					let daydiff = msdiff / (1000 * 60 * 60 * 24).floor;
 					return (
 						<tr key={i} onClick={() => this.handleModalShowHide()} >
 							<td><span className="camp_date">{camp_date}</span> <br/> <span className="days_ago">{daydiff} Days Ago</span></td>

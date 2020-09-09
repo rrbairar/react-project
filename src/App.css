@@ -33,7 +33,7 @@ body{
   color: #82a516;
   border: none;
   border-bottom: 5px solid #82a516;
-  font-size: 300;
+  font-weight: 300;
 }
 .common_container .nav-link{
   padding: 15px 35px;
@@ -170,4 +170,17 @@ body{
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 400;
+}
+/* Responsive */
+@media screen and (max-width: 575px){
+  .common_container .nav-link{
+    padding: 10px;
+  }
+  .common_container .nav-tabs a{
+    font-size: 12px;
+  }
+  .common_container .nav-tabs a.active{
+    font-size: 12px;
+    border-bottom: 3px solid #82a516;
+  }
 }
