@@ -41,7 +41,7 @@ body{
 .tabs{
   border-bottom: 3px solid #ccc;
 }
-.tab-pane{
+.tab-pane.active{
   background: #fff;
 }
 .tabs .tab a{
