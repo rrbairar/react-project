@@ -58,8 +58,18 @@ body{
 .data-table{
   margin-bottom: 0;
 }
-.data-table tr{
+.cursor{
   cursor: pointer;
+}
+.link{
+  text-decoration: none;
+  color: #7788a3;
+}
+.link:hover{
+  text-decoration: none;
+}
+.link:active, .link:visited{
+  color: #7788a3;
 }
 .data-table th{
   border: none;
@@ -69,6 +79,26 @@ body{
 }
 .data-table tbody{
   background: #fff;
+}
+.react-datepicker__input-container{
+  height: 0;
+}
+.react-datepicker__input-container input{
+  width: 0;
+  border: none;
+  height: 0 !important;
+}
+.other_text label{
+  padding: 0;
+  margin: 0;
+}
+.react-datepicker__triangle{
+  left: 11px !important;
+}
+.react-datepicker-wrapper{
+  padding: 0;
+  height: 0;
+  position: absolute;
 }
 .camp_date{
   color: #2c416c;

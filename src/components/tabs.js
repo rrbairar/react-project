@@ -6,15 +6,15 @@ class Navigation extends Component{
     return(
       <div className="common_container">
         <h1 className="common_heading">Manage Campaigns</h1>
-        <Tabs defaultActiveKey="past_campaigns" id="uncontrolled-tab-example">
-          <Tab eventKey="up_campaigns" title="Upcoming Campaigns">
-            <Data />
+        <Tabs defaultActiveKey="future_campaigns" id="uncontrolled-tab-example">
+          <Tab eventKey="future_campaigns" title="Upcoming Campaigns">
+              <Data activeTab="future" />
           </Tab>
-          <Tab eventKey="live_campaigns" title="Live Campaigns">
-            <Data />
+          <Tab eventKey="present_campaigns" title="Live Campaigns">
+              <Data activeTab="present" />
           </Tab>
           <Tab eventKey="past_campaigns" title="Past Campaigns">
-            <Data />
+              <Data activeTab="past"/>
           </Tab>
         </Tabs>
       </div>
