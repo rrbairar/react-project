@@ -10,12 +10,15 @@ import schedule from '../img/calendar.png';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 class Data extends Component{
-	state = {
-            showHide : false,
+    constructor(props) {
+	    super(props);
+	    this.state = {
+	    	showHide : false,
             appName : '',
             appCountry: '',
             startDate: new Date()
-        };
+	    };
+	  }
 
     handleModalShowHide = (e) => {
     	const gameText = e.target.dataset.app;
@@ -86,6 +89,7 @@ class Data extends Component{
 					        <td className="other_text " onClick={() => this.toggleDatePicker}>
 					        <label className="cursor">
 					        <DatePicker
+					           name={'date_pick'+i}
 					           selected={this.state.startDate}
 							   open={this.state.openDatePicker}
 							   onOpenChange={this.datePickerStatus}
@@ -110,6 +114,7 @@ class Data extends Component{
 					        <td className="other_text " onClick={() => this.toggleDatePicker}>
 					        <label className="cursor">
 					        <DatePicker
+					           name={'date_pick'+i}
 					           selected={this.state.startDate}
 							   open={this.state.openDatePicker}
 							   onOpenChange={this.datePickerStatus}
@@ -134,6 +139,7 @@ class Data extends Component{
 					        <td className="other_text " onClick={() => this.toggleDatePicker}>
 					        <label className="cursor">
 					        <DatePicker
+					           name={'date_pick'+i}
 					           selected={this.state.startDate}
 							   open={this.state.openDatePicker}
 							   onOpenChange={this.datePickerStatus}
